@@ -1,0 +1,19 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Overall Score Of World Universities In 2023",
+    "data": {"url": "https://raw.githubusercontent.com/EugeneTheGreat/FIT3179_Homework10/main/data/cleaned_2023_rank.csv"},
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "scores_overall",
+        "type": "quantitative",
+        "sort": "y",
+        "title": "Overall Score"
+      },
+      "x": {
+        "type": "nominal",
+        "field": "name",
+        "title": "University"
+      }
+    }
+  }
