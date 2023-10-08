@@ -12,6 +12,14 @@
 
 </head>
 <body>
+
+<div class="page">
+
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <h1><center>THE World University Rankings</center></h1>
+    </div>
+  </div>
   
 <div id="choropleth_map"></div>
 
@@ -19,6 +27,18 @@
 
   var spec2 = "js/choropleth_map.vg.json";
   vegaEmbed('#choropleth_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+<br><br><br><br>
+
+<div id="bar_chart"></div>
+
+<script type="text/javascript">
+
+  var spec3 = "js/uni_score.vg.json";
+  vegaEmbed('#bar_chart', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
